@@ -1,0 +1,161 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Header Styling */
+header {
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #00bcd4;
+}
+
+header p {
+    font-size: 1rem;
+    color: #d1d1d1;
+}
+
+/* Updates Container */
+.updates-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    animation: fadeInUp 1.5s ease;
+}
+
+/* Update Card Styling */
+.update-card {
+    background: rgba(30, 43, 55, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.update-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #00e676;
+}
+
+.update-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #d1d1d1;
+}
+
+.update-card button {
+    background-color: #00e676;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.update-card button:hover {
+    background-color: #00b35c;
+}
+
+.update-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Bottom Navigation Bar */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(30, 43, 55, 0.9);
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 1000;
+    animation: slideUp 1s ease;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.9rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+    color: #00e676;
+}
+
+.nav-link .icon {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.nav-link .label {
+    font-size: 0.8rem;
+}
+
+/* Fade In Up Animation for Card Grid */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

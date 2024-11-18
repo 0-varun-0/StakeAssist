@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistive Portal</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>AI Assistive Portal</h1>
+        <p>Streamlining Approvals and Decision-Making</p>
+    </header>
+
+    <main class="container">
+        <!-- Stock Graph Section -->
+        <section class="stock-graph">
+            <h2>Live Stock Graph</h2>
+            <canvas id="stockChart"></canvas>
+            <div class="stock-value">
+                <span id="currentStockValue">Loading...</span> INR
+            </div>
+        </section>
+
+        <!-- Stats and Analytics Section -->
+        <section class="stats">
+            <h2>Company Performance</h2>
+            <div class="stats-grid">
+                <div class="stat">
+                    <h3>Revenue</h3>
+                    <p>₹120 Crore</p>
+                </div>
+                <div class="stat">
+                    <h3>Growth</h3>
+                    <p>12% Increase</p>
+                </div>
+                <div class="stat">
+                    <h3>Market Share</h3>
+                    <p>35%</p>
+                </div>
+                <div class="stat">
+                    <h3>Customer Satisfaction</h3>
+                    <p>98%</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <nav class="bottom-nav">
+        <a href="home.html" class="nav-link">
+            <span class="icon">🏠</span>
+            <span class="label">Home</span>
+        </a>
+        <a href="poll.html" class="nav-link">
+            <span class="icon">📊</span>
+            <span class="label">Polls</span>
+        </a>
+        <a href="latest.html" class="nav-link">
+            <span class="icon">📈</span>
+            <span class="label">Latest Updates</span>
+        </a>
+        <a href="gc.html" class="nav-link active">
+            <span class="icon">💬</span>
+            <span class="label">Chat Room</span>
+        </a>
+    </nav>
+    <script src="home.js"></script>
+</body>
+</html>

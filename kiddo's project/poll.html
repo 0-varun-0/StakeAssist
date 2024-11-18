@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polls</title>
+    <link rel="stylesheet" href="poll.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <h1>Polls</h1>
+        <p>Participate in decisions and share your feedback</p>
+    </header>
+
+    <main class="poll-container">
+        <div class="poll-card" data-id="1">
+            <h2>Poll 1: How satisfied are you with our services?</h2>
+            <button class="view-poll">Vote Now</button>
+        </div>
+        <div class="poll-card" data-id="2">
+            <h2>Poll 2: How user-friendly is our platform?</h2>
+            <button class="view-poll">Vote Now</button>
+        </div>
+        <div class="poll-card" data-id="3">
+            <h2>Poll 3: Would you recommend us to others?</h2>
+            <button class="view-poll">Vote Now</button>
+        </div>
+        <div class="poll-card" data-id="4">
+            <h2>Poll 4: How would you rate our customer support?</h2>
+            <button class="view-poll">Vote Now</button>
+        </div>
+    </main>
+
+    <div id="toast" class="toast hidden">Thank you for your response!</div>
+
+    <nav class="bottom-nav">
+        <a href="home.html" class="nav-link">
+            <span class="icon">🏠</span>
+            <span class="label">Home</span>
+        </a>
+        <a href="poll.html" class="nav-link">
+            <span class="icon">📊</span>
+            <span class="label">Polls</span>
+        </a>
+        <a href="latest.html" class="nav-link">
+            <span class="icon">📈</span>
+            <span class="label">Latest Updates</span>
+        </a>
+        <a href="gc.html" class="nav-link active">
+            <span class="icon">💬</span>
+            <span class="label">Chat Room</span>
+        </a>
+    </nav>
+
+    <script src="poll.js"></script>
+</body>
+</html>

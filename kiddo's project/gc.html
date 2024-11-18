@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Chat - Stakeholders</title>
+    <link rel="stylesheet" href="gc.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1>Stakeholder Group Chat</h1>
+            <p>All stakeholders can discuss updates, news, and decisions here.</p>
+        </header>
+
+        <!-- Chat Window with Recycler View-like Behavior -->
+        <div class="chat-window">
+            <div class="messages-container" id="messages-container">
+                <!-- Messages will appear here -->
+            </div>
+        </div>
+
+        <!-- Chat Input -->
+        <div class="chat-input-container">
+            <textarea id="message-input" placeholder="Type a message..." rows="2"></textarea>
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+        <a href="home.html" class="nav-link">
+            <span class="icon">🏠</span>
+            <span class="label">Home</span>
+        </a>
+        <a href="poll.html" class="nav-link">
+            <span class="icon">📊</span>
+            <span class="label">Polls</span>
+        </a>
+        <a href="latest.html" class="nav-link">
+            <span class="icon">📈</span>
+            <span class="label">Latest Updates</span>
+        </a>
+        <a href="gc.html" class="nav-link active">
+            <span class="icon">💬</span>
+            <span class="label">Chat Room</span>
+        </a>
+    </nav>
+
+    <script src="gc.js"></script>
+</body>
+</html>
