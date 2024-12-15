@@ -3,43 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polls</title>
-    <link rel="stylesheet" href="poll.css">
-    <link rel="stylesheet" href="home.css">
+    <title>Polls Dashboard</title>
+
+
+    <link rel="stylesheet" href="add-pole.css">
+
 </head>
 <body>
-    <header>
-        <h1>Polls</h1>
-        <p>Participate in decisions and share your feedback</p>
-    </header>
 
-    <main class="poll-container">
-        <div class="poll-card" data-id="1">
-            <h2>Poll 1: How satisfied are you with our services?</h2>
-            <button class="view-poll">Vote Now</button>
-        </div>
-        <div class="poll-card" data-id="2">
-            <h2>Poll 2: How user-friendly is our platform?</h2>
-            <button class="view-poll">Vote Now</button>
-        </div>
-        <div class="poll-card" data-id="3">
-            <h2>Poll 3: Would you recommend us to others?</h2>
-            <button class="view-poll">Vote Now</button>
-        </div>
-        <div class="poll-card" data-id="4">
-            <h2>Poll 4: How would you rate our customer support?</h2>
-            <button class="view-poll">Vote Now</button>
-        </div>
-    </main>
+    <h1>Polls Dashboard</h1>
+    <div class="container">
+        <!-- Polls Cards will be populated here -->
+        <div id="polls-container"></div>
 
-    <div id="toast" class="toast hidden">Thank you for your response!</div>
+        <!-- Add Poll Form -->
+        <div class="add-poll-card">
+            <input id="poll-question" type="text" placeholder="Enter poll question" required>
+            <button onclick="addPoll()">Add Poll</button>
+        </div>
+    </div>
 
-    <nav class="bottom-nav">
+    <script src="add-pole.js"></script>
+
+<nav class="bottom-nav">
         <a href="home.html" class="nav-link">
             <span class="icon">🏠</span>
             <span class="label">Home</span>
         </a>
-        <a href="poll.html" class="nav-link">
+        <a href="pole.html" class="nav-link">
             <span class="icon">📊</span>
             <span class="label">Polls</span>
         </a>
@@ -52,7 +43,5 @@
             <span class="label">Chat Room</span>
         </a>
     </nav>
-
-    <script src="poll.js"></script>
 </body>
 </html>

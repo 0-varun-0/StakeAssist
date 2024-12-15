@@ -1,6 +1,6 @@
 /* General Reset */
 * {
-    margin: 0;
+    margin: 10;
     padding: 0;
     box-sizing: border-box;
 }
@@ -27,7 +27,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
-    margin-bottom: 60px; /* Space for the bottom nav bar */
+    margin-bottom: 90px; /* Space for the bottom nav bar */
 }
 
 /* Header */
